@@ -38,6 +38,9 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
+    && dotnet tool install fake-cli -g
+    && export PATH="$PATH:/root/.dotnet/tools"
+
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
