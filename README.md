@@ -1,2 +1,2 @@
 # Accord.FSharp
- FSharp wrapper around Accord.Net
+ FSharp wrapper around Accord.Net, just starting
